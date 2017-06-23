@@ -1,0 +1,435 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/06/2017, 06:32:13 PM
+    Author     : Sistemas
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    display: block;
+    float: left;
+    background: #E6E6E6;
+    /*font-family:Square721 BT;
+    font-family:Futura Md BT;*/
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedor{
+    width: 900px;
+    margin: 0 auto;
+}
+.cabeza{
+    width: 900px;
+    display: block;
+    float: left;
+    position: fixed;
+    -webkit-box-shadow: 7px 18px 18px -14px rgba(0,0,0,0.56);
+    -moz-box-shadow: 7px 18px 18px -14px rgba(0,0,0,0.56);
+    box-shadow: 7px 18px 18px -14px rgba(0,0,0,0.56);
+    z-index: 1;
+    background: #E6E6E6;
+}
+.cabeza .logo{
+    width: 100%;
+    display: block;
+    float: left;
+    text-align: center;
+    border-radius: 200px 200px 0 0;
+    /*border-left:10px solid #ffff33;
+    border-right:1px solid #E6E6E6;
+    border-radius: 0 0 100px 30px;
+    border-left: none;*/
+    padding: 10px;
+    box-sizing:border-box;
+    /*background:rgba(255,255,255,0.79);*/
+    background:#660066;
+}
+.cabeza .logo img{
+    width: 7%;
+}
+/*.cabeza .logo{
+    width: 30%;
+    display: block;
+    float: left;
+    text-align: center;
+    border:1px solid #E6E6E6;
+    border-radius: 0 0 100px 30px;
+    border-left: none;
+    padding: 30px;
+    box-sizing:border-box;
+    background:rgba(255,255,255,0.79);
+}
+.cabeza .logo img{
+    width: 50%;
+}*/
+
+.cabeza .menu{
+    width: 70%;
+    display: block;
+    float: left;
+}
+.cabeza .menu nav{
+    width: 100%;
+    display: block;
+    float: left;
+    z-index: 1;
+}
+.cabeza .menu nav ul{
+    width: 100%;
+    display: block;
+    float: left;
+}
+.cabeza .menu nav ul li{
+    width: 25%;
+    display: block;
+    float: left;
+    /*background:#ffcc33;*/
+    background:#F2F2F2;
+}
+.cabeza .menu nav ul li ul{
+    width: 82.5%;
+    display:block;
+    float: left;
+    position:absolute;
+    margin-top: 0px;
+    z-index: -1;
+    background: #660066;
+}
+.cabeza .menu nav ul li ul li{
+    width: 25%;
+    display: block;
+    float: left;
+    /*background:#ffcc33;*/
+}
+.cabeza .menu nav ul li ul li a{
+    width: 100%;
+    display: block;
+    float: left;
+    background:#660066;
+    color:white;
+}
+.cabeza .menu nav ul li ul li ul{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-top: -100px;
+}
+.cabeza .menu nav ul li ul li ul li{
+    width:100%;
+    display: block;
+    float: left;
+}
+.cabeza .menu nav ul li ul li ul li a{
+    width:100%;
+    display: block;
+    float: left;
+    background:#33ffff;
+    color:gray;
+}
+/*.cabeza .menu nav ul li{
+    width: 30%;
+    display: block;
+    float: left;
+    background: white;
+}*/
+.cabeza .menu nav ul li a{
+    width: 100%;
+    display: block;
+    float: left;
+    /*color: #A4A4A4;*/
+    color: gray;
+    font-size: 11px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    /*border-bottom: 1px solid #E6E6E6;*/
+    /*background:#ffcc33;*/
+}
+.cabeza .menu nav ul li:hover > ul{
+    color:gray;
+    margin-top: 30px;
+    transition: 1s;
+    /*border-right:  1px solid #E6E6E6;*/
+}
+.cabeza .menu nav ul li a:hover{
+    background:#660066;
+    transition: 0.5s;
+    color:white;
+}
+#menubig{
+    width:65%;
+}
+.cabeza .perfil{
+    width: 30%;
+    display: block;
+    float: left;
+    background: white;
+}
+.cabeza .perfil a{
+    width:100px;
+    display: block;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    font-size: 11px;
+    color: gray;
+    padding: 5px;
+    box-sizing: border-box;
+    border-left:1px solid #E6E6E6;
+}
+.cabeza .perfil span{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*.cabeza .perfil a img{
+    width:10px;
+    margin-right: 5px;
+}*/
+.cabeza .perfil a:hover{
+    color: dodgerblue;
+}
+
+/*---------PUBLICIDAD-------------*/
+
+.publicidad-left{
+    width: 230px;
+    position: fixed;
+    left: 0;
+}
+.publicidad-left img{
+    width:100%;
+}
+.publicidad-right{
+    width: 230px;
+    position: fixed;
+    right:0;
+}
+.publicidad-right img{
+    width:100%;
+}
+
+.carita{
+    width:15%;
+    display: block;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    border-right:  1px solid white;
+    text-align: center;
+    box-sizing: border-box;
+    color:#cc00cc;
+    background:white;
+    /*padding: 10px;*/
+    box-sizing:border-box;
+}
+
+.direccion-left{
+    width:30px;
+    display: block;
+    float: left;
+    margin-top: 125px;
+    position:absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: #660066;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.direccion-right{
+    width:30px;
+    display: block;
+    float:right;
+    margin-top: -215px;
+    position:relative;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: #660066;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cuerpo{
+    width: 100%;
+    display: block;
+    float: left;
+    margin-top: 117px;
+}
+.cuerpo .slider{
+    width: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    
+}
+.cuerpo .slider ul{
+    display:flex;
+    float: left;
+    width: 400%;
+    /*position: relative;*/
+    animation: rotar 30s infinite;
+    animation-direction: alternate;
+}
+.cuerpo .slider ul li{
+    width: 900px;
+    height: 340px;
+    display: block;
+    float: left;
+}
+#p1{
+    background-image: url('../img/oferta.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#p2{
+    background-image: url('../img/oferta.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#p3{
+    background-image: url('../img/oferta.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#p4{
+    background-image: url('../img/oferta.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.cuerpo .slider ul li p{
+    width: 300px;
+    display: block;
+    float: left;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 150px;
+    /*background:rgba(255,255,255,0.79);*/
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.cuerpo .slider ul li a p:hover{
+    border-bottom: 3px solid dodgerblue;
+    transition: ease-in-out, width .65s ease-in-out;
+    transition: 1s;
+}
+/*.cuerpo .slider nav li img{
+    width: 100%;
+}*/
+@keyframes rotar {
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+    
+    25%{margin-left:-100%;}
+    40%{margin-left:-100%;}
+    
+    45%{margin-left:-200%;}
+    60%{margin-left:-200%;}
+    
+    65%{margin-left:-300%;}
+    80%{margin-left:-300%;}
+    
+    /* 85%{margin-top:-400%;}
+    100%{margin-top:-400%;}*/
+}
+.cuerpo .titulo{
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 17px;
+    color: gray;
+    text-align: center;
+    border-bottom: 1px solid #E6E6E6;
+    font-family: 'Montserrat', sans-serif;
+    /*margin-bottom: 10px;*/
+    background: white;
+}
+.cuerpo .categoriastitulo{
+    width:33%;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+.cuerpo .categoriastitulo p{
+    width:70%;
+    display: block;
+    float: left;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background:red;
+}
+.cuerpo .seccionpromociones{
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: 100px;
+}
+.cuerpo .seccionpromociones .promocion{
+    width: 295px;
+    display: block;
+    float: left;
+    margin-left: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -webkit-box-shadow: 7px 18px 18px -14px rgba(0,0,0,0.56);
+    -moz-box-shadow: 7px 18px 18px -14px rgba(0,0,0,0.56);
+    box-shadow: 7px 18px 18px -14px rgba(0,0,0,0.56);
+}
+.cuerpo .seccionpromociones .promocion .imgprom{
+    width: 100%;
+    display: block;
+    float: left;
+}
+.cuerpo .seccionpromociones .promocion img{
+    width: 100%;
+    display: block;
+    float: left;
+}
+.cuerpo .seccionpromociones .promocion .descripcionprom{
+    width: 100%;
+    display: block;
+    float: left;
+}
+.cuerpo .seccionpromociones .promocion .descripcionprom a{
+    width: 120px;
+    display:block;
+    opacity: 0;
+    float: left;
+    color: gray;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: -70px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.cuerpo .seccionpromociones .promocion:hover > .descripcionprom a{
+    color:white;
+    opacity: 0.9;
+    transition: 1s;
+    border-radius: 0 50px 0 0 ;
+    background: #cc3300;
+    border-bottom: 1px solid #cc3300;
+}
